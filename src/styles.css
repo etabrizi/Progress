@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  counter-reset: section;
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
+li::before {
+  counter-increment: section;
+  content: counter(section);
+  display: inline-block;
+  border-radius: 100%;
+  background: red;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+}
+
+.one:before {
+  left: 0%;
+}
+.two:before {
+  left: 25%;
+}
+.three:before {
+  left: 50%;
+}
+.four:before {
+  left: 75%;
+}
