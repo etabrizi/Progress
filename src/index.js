@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Progress from "./components/progress";
 
 import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <ol>
-        <li className="one" />
-        <li className="two" />
-        <li className="three" />
-        <li className="four" />
-      </ol>
+      <div className="container">
+        <Progress ballon={4} />
+      </div>
     </div>
   );
 }
